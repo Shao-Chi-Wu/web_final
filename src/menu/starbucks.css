@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+  
+*{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+}
+
+.select {
+    text-align: center;
+    text-align-last: center;
+    margin: 25px 0;
+}
+.select button{
+  background-color: white;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: solid #fff;
+  border-radius: 5px;
+}
+.select button:hover{
+  background-color: #f1f2f6;
+  border: solid #f1f2f6;
+}
+
+.content-tables {
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left:auto; 
+    margin-right:auto;
+}
+  
+.content-tables thead tr {
+    background-color: #006341;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+  
+.content-tables th,
+.content-tables td {
+    padding: 12px 15px;
+}
+  
+.content-tables tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+  
+.content-tables tbody tr:nth-of-type(even) {
+    background-color: #fff;
+}
+  
+.content-tables tbody tr:last-of-type {
+    border-bottom: 2px solid #006341;
+}
+  
+.content-tables tbody tr.active-row {
+    font-weight: bold;
+    color: #006341;
+}
