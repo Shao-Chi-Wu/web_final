@@ -10,11 +10,11 @@ import {BrowserRouter as Router, Switch, Route,} from 'react-router-dom';
 import ReactGa from 'react-ga';
 import {useEffect}from 'react';
 
-useEffect(()=>{ ReactGa.initialize('UA-193260571-2')     
-ReactGa.pageview(window.location.pathname)   },[])
+
 
 function App() {
-  useEffect();
+  useEffect(()=>{ ReactGa.initialize('UA-193260571-2')     
+  ReactGa.pageview(window.location.pathname)   },[])
   return (
       <Router>
           <Switch>
