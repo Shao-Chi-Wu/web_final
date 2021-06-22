@@ -7,15 +7,14 @@ import SF from './Foods';
 import LD from './L_Drinks';
 import LF from './L_Foods';
 import {BrowserRouter as Router, Switch, Route,} from 'react-router-dom';
-import ReactGA from 'react-ga';
+import ReactGa from 'react-ga';
+import react ,{useEffect}from 'react';
 
-function initizeAnalytics(){
-  ReactGA.initialize("G-80TLZDV7KD")
-  ReactGA.pageview('/')
-}
+useEffect(()=>{ ReactGa.initialize('UA-193260571-2')     
+ReactGa.pageview(window.location.pathname)   },[])
 
 function App() {
-  initizeAnalytics();
+  useEffect();
   return (
       <Router>
           <Switch>
