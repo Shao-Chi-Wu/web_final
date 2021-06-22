@@ -8,7 +8,7 @@ import LD from './L_Drinks';
 import LF from './L_Foods';
 import {BrowserRouter as Router, Switch, Route,} from 'react-router-dom';
 import ReactGa from 'react-ga';
-import react ,{useEffect}from 'react';
+import {useEffect}from 'react';
 
 useEffect(()=>{ ReactGa.initialize('UA-193260571-2')     
 ReactGa.pageview(window.location.pathname)   },[])
